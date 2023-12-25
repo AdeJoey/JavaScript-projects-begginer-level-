@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/cdcd44b1a9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="musicPlayer">
+        <nav>
+          <div class="circle"><img src="/media/icons8-back-24.png" width="20" height="20" /></div>
+          <div class="circle"><img src="/media/icons8-menu-24.png" width="20" height="20" /></div>
+
+        </nav>
+        <img class="MusicPic" src="OGO.jpeg"/>
+        <h2>OGO</h2>
+        <p><marquee behavior="scroll" direction="right">Dunsin Oyekan <span>ft.</span> Theophilus Sunday</marquee> </p>
+        <audio id="song">
+            <source src="/media/Dunsin_Oyekan_ft_Theophilus_Sunday_-_OGO_Gospelafri1.com.mp3" type="audio/mp3">
+        </audio>
+        <input type="range" for="range" name="range" id="range" value="0">
+        <div class="buttons">
+          <img
+            src="/media/icons8-backward-48.png"
+            width="30"
+            height="30"
+           
+          />
+          <i id="play" class="fa-solid fa-play"></i>
+          <img
+            src="/media/icons8-forward1-48.png"
+            width="30"
+            height="30"
+            
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
