@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #f1b2b2 url('pexels-rachel-claire-4577715.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formNcalculator{
+   width: 400px;
+   background: rgba(0, 0, 0, 0.4);
+   color: #f7f2f2;
+   padding: 20px 30px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.212);
+   text-align: center;
+}
+form{
+    text-align: left;
+}
+h1{
+    margin: 0 0 20px;
+    letter-spacing: 0.5px;
+}
+hr{
+   width: 80%;
+   margin: 0 auto 20px;
+   height: 2px;
+   background: #f7f2f2;
+   border: 0;
+   border-radius: 5px;
+}
+input, select{
+    margin: 10px 0 20px;
+    background: rgba(37, 34, 34,0.4);
+    color: #f7f2f2;
+    padding: 4px 10px;
+    outline: 0;
+    border-radius: 5px;
+    border: 0;
+}
+input{
+    width: 30%;
+    border-bottom: 1px solid black;
+    box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.212);
+    margin-left: 5px;
+}
+option{
+    background: rgba(0, 0, 0, 0.2);
+}
+button{
+    padding: 15px 20px;
+    color: #ffffff;
+    background:linear-gradient(45deg, rgb(190, 105, 66), rgba(3, 83, 187, 0.644));
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
+button:hover{
+    filter: brightness(150%);
+    transition: all ease-in-out 0.2s;
+}
+.result{
+    margin-top: 10px;
+    position: relative;
+    background: rgba(38, 38, 41, 0.363);
+    padding: 20px;
+    border-radius: 5px;
+}
+.result span{
+    font-size: 45px;
+    margin-top: 5px;
+}
+.result sup{
+   position: absolute;
+   left: 118px;
+   top: 42px;
+   box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.212);
+}
+
