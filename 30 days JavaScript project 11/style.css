@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url("./pictures/pexels-lil-artsy-1257894.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    background: rgba(16, 32, 12, 0.32);
+    width: 400px;
+    height: 450px;
+    color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);  
+    border-radius: 15px;
+    backdrop-filter: blur(1.8px);
+    overflow: hidden;
+    transition: transform 1.2s ease, height 1.2s ease;
+    position: relative;
+    backdrop-filter: blur(3px);
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.container .signUp-wrapper{
+    transform: translateX(-100%);
+}
+.email-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    margin: 30px 8px;
+    position: relative;
+}
+.email-input input{
+    position: absolute;
+    width: 90%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.email-input i{
+    margin-bottom: 3px;
+}
+.email-input .fa-eye{
+    cursor: pointer;
+    transition: 0.2s;
+}
+.email-input .fa-eye:hover, a:hover{
+   color:  #121b01;
+}
+.email-input label{
+    transition: 0.4s ;
+}
+.email-input input:focus~ label,
+.email-input input:active~ label{
+    transform: translateY(-20px);
+    font-size: smaller;
+}
+a{
+    text-decoration: underline;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+ .reminder{
+    margin-left: 25px;
+}
+button{
+    padding: 10px 20px;
+    width: 60%;
+    color:  #121b01;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background:  #121b01;
+    /* border: 1px solid #07175f; */
+    color: #fff;
+    cursor: pointer;
+}
+.change-form{
+    height: 500px;
+}
+.change-form .login-wrapper{
+    transform: translateX(100%);
+}
+.change-form .signUp-wrapper{
+    transform: translateX(0%);
+}
+
